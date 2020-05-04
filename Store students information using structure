@@ -1,0 +1,23 @@
+#include<stdio.h>
+#define size 100
+int main()
+{
+	struct info{
+		char name[size];
+		long int id;
+		char dept[size];
+		long int batch;
+	}s;
+	printf("Enter Information:\n");
+	printf("Enter Name:");
+	scanf("%s",&s.name);
+	printf("\nEnter ID:");
+	scanf("%ld",&s.id);
+	printf("\nEnter Department:");
+	scanf("%s",&s.dept);
+	printf("\nEnter Batch:");
+	scanf("%ld",&s.batch);
+	printf("\nShowing Results:\n");
+	printf("Name: %s\nID: %ld\nDept: %s\nBatch: %ld\n",s.name,s.id,s.dept,s.batch);
+	return 0;
+}
